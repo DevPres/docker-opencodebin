@@ -7,9 +7,12 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
-#define DOCKER_IMAGE "ghcr.io/sst/opencode"
+#define DOCKER_IMAGE "ghcr.io/anomalyco/opencode"
 #define DEFAULT_MOUNT "./"
 #define DEFAULT_DEST "/workspace"
+#define DEFAULT_OPENCODEBIN_CONFIG "~/.config/opencodebin/config.json"
+#define DEFAULT_CONFIG "~/.config/opencode/"
+#define DEFAULT_OPENCODE_CONFIG_DEST "/root/.config/opencode/"
 
 typedef struct {
   char *mount_path;
